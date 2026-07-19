@@ -1,4 +1,4 @@
-# [Your Name] for Beaumont City Council
+# Lloyd White for Beaumont City Council
 
 Static campaign site — plain HTML/CSS, no build step required.
 
