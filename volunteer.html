@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer — [Your Name] for Beaumont City Council</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="mark" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="13" cy="13" r="1.6" fill="#D8C9A3"/>
+        <line x1="13" y1="13" x2="13" y2="3" stroke="#D8C9A3" stroke-width="1.4"/>
+        <line x1="13" y1="13" x2="20" y2="17" stroke="#D8C9A3" stroke-width="1.4"/>
+        <line x1="13" y1="13" x2="6" y2="17" stroke="#D8C9A3" stroke-width="1.4"/>
+        <line x1="13" y1="13" x2="13" y2="24" stroke="#D8C9A3" stroke-width="1.2"/>
+      </svg>
+      [Your Name] for Council
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="issues.html">Issues</a>
+      <a href="volunteer.html" aria-current="page">Volunteer</a>
+      <a href="yard-sign.html">Yard Sign</a>
+      <a href="donate.html" class="nav-donate">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Get Involved</p>
+    <h2 class="section-title" style="margin-bottom:0.5rem;">Volunteer</h2>
+    <p style="max-width:38rem; margin-bottom:2rem;">Beaumont campaigns are won door to door. Tell us a little about yourself and we'll be in touch about canvassing, phone banking, and events near you.</p>
+
+    <!--
+      This is a plain HTML form. Since this is a static site (GitHub + Cloudflare Pages),
+      you'll need a form backend to actually receive submissions. Easiest options:
+        - Cloudflare Pages Forms is not built-in; use a service like Formspree,
+          Getform, or Basin — just set the <form action> to the endpoint they give you.
+        - Or point action to a Google Form and skip custom styling.
+      Until you wire up an endpoint, this form will not send anywhere.
+    -->
+    <form class="form-card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="field">
+        <label for="address">Address <span style="text-transform:none;">(helps us assign you by neighborhood)</span></label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div class="field">
+        <label>I'm interested in</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="interest" value="Canvassing"> Canvassing</label>
+          <label><input type="checkbox" name="interest" value="Phone banking"> Phone banking</label>
+          <label><input type="checkbox" name="interest" value="Yard sign distribution"> Yard sign distribution</label>
+          <label><input type="checkbox" name="interest" value="Event help"> Event help</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="availability">Availability</label>
+        <select id="availability" name="availability">
+          <option value="Weekdays">Weekdays</option>
+          <option value="Weekends">Weekends</option>
+          <option value="Evenings">Evenings</option>
+          <option value="Flexible">Flexible</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn">Sign Me Up</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="disclaimer">Paid for by [Committee Name for Your Name for Beaumont City Council 2026]. FPPC ID# [XXXXXXX].</p>
+    <p>&copy; 2026 [Your Name] for Beaumont City Council</p>
+  </div>
+</footer>
+
+</body>
+</html>
